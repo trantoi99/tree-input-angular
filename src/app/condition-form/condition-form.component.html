@@ -1,0 +1,13 @@
+<form [formGroup]="_form">
+  <div>
+    <div (click)="hideShow(formIndex)">toggle</div>
+    <fieldset id="{{ formIndex }}">
+      <legend>{{ formLabel }}</legend>
+      <div>
+        <input type="text" formControlName="variable" />
+
+        <button type="button" (click)="remove.emit()">delete condition</button>
+      </div>
+    </fieldset>
+  </div>
+</form>
